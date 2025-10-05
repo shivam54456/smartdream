@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>Admin Dashboard</h2>
+        <div id="stats">
+            <p>Total Users: <span id="totalUsers">0</span></p>
+        </div>
+        <div id="users">
+            <h3>Users</h3>
+            <ul id="userList"></ul>
+        </div>
+        <div id="withdrawals">
+            <h3>Withdrawal Requests</h3>
+            <ul id="withdrawalList"></ul>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="config.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
